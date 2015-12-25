@@ -22,19 +22,19 @@ This class will make two arraylists for two tables based on tablenames(table1Nam
 In Main class, conf is created using Configuration. Then Job variable is created using conf variable. After that I set the names of mapperclass and reducerclass. Then I set the outputkeyclass, outputvalueclass, mapoutputkeyclass, mapoutputvalueclass, Inputformatclass and outputformatclass. After that I set the inputfileformat with the input path: args[0] and outputfileformat with the output path: args[1]. In the end I set the boolean for waitforcompletion to true. 
 
 **Input file** 
-R, 2, Don, Larson, Newark, 555-3221
-S, 1, 33000, 10000, part1
-S, 2, 18000, 2000, part1
-S, 2, 6958, 454, pJ
-R, 3, Sal, Maglite, Nutley, 555-6905
-S, 3, 24000, 5000, part1
-S, 3, 985, 67, part8
-S, 4, 22000, 7000, part1
-R, 4, Bob, Turley, Passaic, 555-8908
+* R, 2, Don, Larson, Newark, 555-3221
+* S, 1, 33000, 10000, part1
+* S, 2, 18000, 2000, part1
+* S, 2, 6958, 454, pJ
+* R, 3, Sal, Maglite, Nutley, 555-6905
+* S, 3, 24000, 5000, part1
+* S, 3, 985, 67, part8
+* S, 4, 22000, 7000, part1
+* R, 4, Bob, Turley, Passaic, 555-8908
 
 **Output**
-R, 2, Don, Larson, Newark, 555-3221, S, 2, 18000, 2000, part1
-R, 2, Don, Larson, Newark, 555-3221, S, 2, 6958, 454, pJ
-R, 3, Sal, Maglite, Nutley, 555-6905, S, 3, 24000, 5000, part1
-R, 3, Sal, Maglite, Nutley, 555-6905, S, 3, 985, 67, part8
-R, 4, Bob, Turley, Passaic, 555-8908, S, 4, 22000, 7000, part1
+* R, 2, Don, Larson, Newark, 555-3221, S, 2, 18000, 2000, part1
+* R, 2, Don, Larson, Newark, 555-3221, S, 2, 6958, 454, pJ
+* R, 3, Sal, Maglite, Nutley, 555-6905, S, 3, 24000, 5000, part1
+* R, 3, Sal, Maglite, Nutley, 555-6905, S, 3, 985, 67, part8
+* R, 4, Bob, Turley, Passaic, 555-8908, S, 4, 22000, 7000, part1
