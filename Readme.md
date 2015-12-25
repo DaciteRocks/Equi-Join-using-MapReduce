@@ -13,13 +13,13 @@ sudo -u <username> <path_of_hadoop> jar equijoin.jar dds.assignment4.App <HDFSin
 
 
 **MAPPER CLASS: Map**
-This class will receive data in key which I save in String line variable. I got the data in a String array, splitted by comma: ",". I get the JoinColumn from second character of string array. Then I am take table1Name and table2Name first from character in the string array. Using context.write I write JoinColumn and ValueLine(which has the data)   
+* This class will receive data in key which I save in String line variable. I got the data in a String array, splitted by comma: ",". I get the JoinColumn from second character of string array. Then I am take table1Name and table2Name first from character in the string array. Using context.write I write JoinColumn and ValueLine(which has the data)   
 
 **REDUCER CLASS: Reduce**
-This class will make two arraylists for two tables based on tablenames(table1Name and table2Name). Then running for loops in each table I made the join and added that to string strData variable. Then I put the String strData variable's data into new Text variable called joinResult. Then I am clearing joinResult everytime.   
+* This class will make two arraylists for two tables based on tablenames(table1Name and table2Name). Then running for loops in each table I made the join and added that to string strData variable. Then I put the String strData variable's data into new Text variable called joinResult. Then I am clearing joinResult everytime.   
 
 **DRIVER CLASS: main** 
-In Main class, conf is created using Configuration. Then Job variable is created using conf variable. After that I set the names of mapperclass and reducerclass. Then I set the outputkeyclass, outputvalueclass, mapoutputkeyclass, mapoutputvalueclass, Inputformatclass and outputformatclass. After that I set the inputfileformat with the input path: args[0] and outputfileformat with the output path: args[1]. In the end I set the boolean for waitforcompletion to true. 
+* In Main class, conf is created using Configuration. Then Job variable is created using conf variable. After that I set the names of mapperclass and reducerclass. Then I set the outputkeyclass, outputvalueclass, mapoutputkeyclass, mapoutputvalueclass, Inputformatclass and outputformatclass. After that I set the inputfileformat with the input path: args[0] and outputfileformat with the output path: args[1]. In the end I set the boolean for waitforcompletion to true. 
 
 **Input file** 
 * R, 2, Don, Larson, Newark, 555-3221
