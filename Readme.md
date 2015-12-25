@@ -3,7 +3,7 @@
 Implemented Equi-Join operation on tuples using MapReduce on multi node hadoop cluster to (1 Master & 3 Slaves). 
 
 
-**Instructions:** { Coder: Jasdeep }
+######Instructions: { Coder: Jasdeep }
 ----------------------------------------------------------------------------------------------------------------
 
 **Assumption:** The code assumes that the data is given for two tables only.
