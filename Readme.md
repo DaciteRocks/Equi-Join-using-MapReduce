@@ -1,4 +1,9 @@
-Instructions: { Coder: Jasdeep }
+##Equi-Join operation using MapReduce (Java) on multi-node Hadoop filesystem
+
+Implemented Equi-Join operation on tuples using MapReduce on multi node hadoop cluster to (1 Master & 3 Slaves). 
+
+
+###Instructions: { Coder: Jasdeep }
 ----------------------------------------------------------------------------------------------------------------
 
 Assumption: The code assumes that the data is given for two tables only.
